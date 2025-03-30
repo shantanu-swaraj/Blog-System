@@ -1,0 +1,274 @@
+/* Dark theme improvements */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/* Blog List Container */
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Blog Card */
+.blog-card {
+    background-color: #dfb9b9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.blog-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Read More Button */
+.read-more {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    color: #ff9800;
+}
+
+/* Blog Details Page */
+.blog-details {
+    max-width: 800px;
+    padding: 30px;
+    background-color: #a75b5b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.blog-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Interactions (Likes, Comments, Bookmark) */
+.interactions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.like-btn, .bookmark-btn, .translate-btn {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.like-btn:hover, .bookmark-btn:hover, .translate-btn:hover {
+    background-color: #00bcd4;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #554c4c;
+    color: #e0e0e0;
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-section li {
+    background-color: #6b6060;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.post-btn, .ai-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-btn:hover, .ai-btn:hover {
+    background-color: #dae3e4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-list {
+        grid-template-columns: 1fr;
+    }
+    .interactions {
+        flex-direction: column;
+    }
+}
+
+
+/* //Dark Mode Styling 
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+//Title 
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+//Search Bar 
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+//* Blog Cards 
+.blog-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.blog-card h2 {
+    color: #ffffff;
+}
+
+.blog-card p {
+    color: #b0b0b0;
+}
+
+//* Read More Button 
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+//* Like Button *
+.like-btn {
+    background-color: #333;
+    border: none;
+    color: #00bcd4;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.like-btn:hover {
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+//* Comments Section 
+.comments-section {
+    margin-top: 15px;
+}
+
+.comments-section input {
+    width: 100%;
+    padding: 8px;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.comments-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.comments-section li {
+    background-color: #292929;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #e0e0e0;
+}
+*/
