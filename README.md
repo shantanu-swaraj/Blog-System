@@ -15,7 +15,7 @@ Installation & Setup
 sh
 Copy
 Edit
-git clone https://github.com/your-repo/blog-system.git
+git clone [https://github.com/your-repo/blog-system.git](https://github.com/shantanu-swaraj/Blog-System.git)
 cd blog-system
 2. Install dependencies
 sh
@@ -29,6 +29,8 @@ Edit
 npm start
 Technologies Used
 Frontend: React.js
+    JavaScript
+    CSS
 
 API Handling: Axios
 
