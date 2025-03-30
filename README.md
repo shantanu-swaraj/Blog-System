@@ -1,66 +1,72 @@
 Overview
-The Blog System is a React.js-based web application that dynamically fetches blog posts from multiple APIs and displays them in an interactive user interface. It allows users to search, like, dislike, comment, and toggle between light and dark modes. A basic authentication system is also included for access control.
+
+This is a React.js-based blog system that fetches blog posts from dummy APIs and displays them in an interactive UI. Users can search, like, dislike, comment, and toggle between light and dark modes. It also includes a basic authentication system.
 
 Features
-✅ Fetches blog posts from multiple APIs
-✅ Search functionality to filter blogs easily
-✅ User engagement – Like, dislike, and comment on posts
-✅ Read More / Read Less toggle for better readability
-✅ Light/Dark mode for an enhanced user experience
-✅ Basic authentication system (Username: admin, Password: password)
-✅ Pagination for better navigation
 
-Installation & Setup
-1. Clone the repository
-sh
-Copy
-Edit
-git clone (https://github.com/shantanu-swaraj/Blog-System.git)
+Fetches blog posts from multiple APIs
+
+Search functionality to filter blogs
+
+Like and dislike buttons for engagement
+
+Comment system for user interaction
+
+Read more / Read less toggle
+
+Light and dark mode toggle
+
+Basic authentication system (Username: admin, Password: password)
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/your-repo/blog-system.git
 cd blog-system
-2. Install dependencies
-sh
-Copy
-Edit
+
+Install dependencies:
+
 npm install
-3. Run the application
-sh
-Copy
-Edit
+
+Run the project:
+
 npm start
+
 Technologies Used
-Frontend: React.js
-    JavaScript
-    CSS
 
-API Handling: Axios
+React.js
 
-Styling: CSS
+Axios for API requests
+
+CSS for styling
 
 API Endpoints Used
+
 https://dummyjson.com/posts
 
 https://jsonplaceholder.typicode.com/posts
 
 https://dev.to/api/articles
 
-How to Use
-Open the application and log in using:
-Username: admin | Password: password
+Usage
 
-Browse through blog posts and use the search bar to find specific content.
+Open the application and log in using admin/password.
 
-Like, dislike, and comment on blog posts to engage with the content.
+Browse through blog posts and use the search bar to filter them.
+
+Like, dislike, and comment on blog posts.
 
 Use the theme toggle button to switch between light and dark mode.
 
-Navigate easily through blog posts using pagination.
-
 Future Enhancements
-🚀 Implement JWT authentication for a secure login system
-🚀 Add backend support for persistent user interactions
-🚀 Improve UI/UX with animations and better styling
-🚀 Include user profiles and saved blog posts
+
+User authentication with JWT
+
+Improved UI with animations
+
+Backend integration for persistent data storage
 
 License
-This project is licensed under the MIT License.
 
+This project is licensed under the MIT License.
