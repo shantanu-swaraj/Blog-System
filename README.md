@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Overview
+The Blog System is a React.js-based web application that dynamically fetches blog posts from multiple APIs and displays them in an interactive user interface. It allows users to search, like, dislike, comment, and toggle between light and dark modes. A basic authentication system is also included for access control.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+✅ Fetches blog posts from multiple APIs
+✅ Search functionality to filter blogs easily
+✅ User engagement – Like, dislike, and comment on posts
+✅ Read More / Read Less toggle for better readability
+✅ Light/Dark mode for an enhanced user experience
+✅ Basic authentication system (Username: admin, Password: password)
+✅ Pagination for better navigation
 
-## Available Scripts
+Installation & Setup
+1. Clone the repository
+sh
+Copy
+Edit
+git clone https://github.com/your-repo/blog-system.git
+cd blog-system
+2. Install dependencies
+sh
+Copy
+Edit
+npm install
+3. Run the application
+sh
+Copy
+Edit
+npm start
+Technologies Used
+Frontend: React.js
 
-In the project directory, you can run:
+API Handling: Axios
 
-### `npm start`
+Styling: CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+API Endpoints Used
+https://dummyjson.com/posts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://jsonplaceholder.typicode.com/posts
 
-### `npm test`
+https://dev.to/api/articles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Use
+Open the application and log in using:
+Username: admin | Password: password
 
-### `npm run build`
+Browse through blog posts and use the search bar to find specific content.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Like, dislike, and comment on blog posts to engage with the content.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use the theme toggle button to switch between light and dark mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate easily through blog posts using pagination.
 
-### `npm run eject`
+Future Enhancements
+🚀 Implement JWT authentication for a secure login system
+🚀 Add backend support for persistent user interactions
+🚀 Improve UI/UX with animations and better styling
+🚀 Include user profiles and saved blog posts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+License
+This project is licensed under the MIT License.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
